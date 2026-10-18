@@ -7,7 +7,10 @@
     "captured": "2026-09-30",
     "type": "article",
     "effort": "1:00",
-    "done": false
+    "done": false,
+    "queue": "inbox",
+    "priority": null,
+    "tags": []
   },
   {
     "id": "language-models-text-classification",
@@ -17,7 +20,10 @@
     "captured": "2026-10-04",
     "type": "article",
     "effort": "1:00",
-    "done": false
+    "done": false,
+    "queue": "inbox",
+    "priority": null,
+    "tags": []
   },
   {
     "id": "reverse-saas-vc",
@@ -27,6 +33,811 @@
     "captured": "2026-10-08",
     "type": "article",
     "effort": "0:15",
-    "done": false
+    "done": false,
+    "queue": "inbox",
+    "priority": null,
+    "tags": []
+  },
+  {
+    "title": "Agentic Engineering at Zalando — A Snapshot",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "article",
+      "agents"
+    ],
+    "queue": "quick",
+    "url": "https://engineering.zalando.com/posts/2026/08/agentic-engineering-at-zalando-a-snapshot.html",
+    "source": "Miguel (WhatsApp)",
+    "captured": "2026-08-18",
+    "effort": "0:20",
+    "type": "",
+    "done": false,
+    "id": "rl-agentic-engineering-at-zalando-a-snapshot"
+  },
+  {
+    "title": "The Lifecycle of LLM-as-a-Judge for Large-Scale Recommendation Explanations (Netflix)",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "paper",
+      "agents"
+    ],
+    "queue": "quick",
+    "url": "https://arxiv.org/abs/2608.18300",
+    "source": "Miguel (WhatsApp)",
+    "captured": "2026-08-24",
+    "effort": "0:30",
+    "type": "",
+    "done": false,
+    "id": "rl-the-lifecycle-of-llm-as-a-judge-for-large-scale-re"
+  },
+  {
+    "title": "Karpathy — Talk at Stanford (1h video)",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "video",
+      "ml",
+      "karpathy"
+    ],
+    "queue": "quick",
+    "url": "https://x.com/i/status/2086547599033536913",
+    "source": "Miguel (WhatsApp, 2 tweets)",
+    "captured": "2026-08-10",
+    "effort": "1:00",
+    "type": "",
+    "done": false,
+    "id": "rl-karpathy-talk-at-stanford-1h-video"
+  },
+  {
+    "title": "The State of Agent Wikis — mem0ai (IN CONTEXT #17)",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "article",
+      "wiki"
+    ],
+    "queue": "quick",
+    "url": "https://x.com/i/status/2079585032587694582",
+    "source": "X (@mem0ai)",
+    "captured": "2026-07-23",
+    "effort": "0:20",
+    "type": "",
+    "done": false,
+    "id": "rl-the-state-of-agent-wikis-mem0ai-in-context-17"
+  },
+  {
+    "title": "Getting started with loops (Anthropic / ClaudeDevs)",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "article",
+      "agents"
+    ],
+    "queue": "quick",
+    "url": "https://x.com/i/status/2074208949205881033",
+    "source": "X (@ClaudeDevs)",
+    "captured": "2026-07-08",
+    "effort": "0:15",
+    "type": "",
+    "done": false,
+    "id": "rl-getting-started-with-loops-anthropic-claudedevs"
+  },
+  {
+    "title": "The Blueprint for Autonomous Work Agents",
+    "priority": "B",
+    "tags": [
+      "video",
+      "agents"
+    ],
+    "queue": "quick",
+    "url": "https://youtu.be/hLUGXO5DSpo",
+    "source": "YouTube — Gavriel Cohen / NanoClaw",
+    "captured": "2026-07-04",
+    "effort": "0:23",
+    "type": "",
+    "done": false,
+    "id": "rl-the-blueprint-for-autonomous-work-agents"
+  },
+  {
+    "title": "Databricks Data+AI Summit Day 1 Recap (Jun 2026)",
+    "priority": "A",
+    "tags": [
+      "@work",
+      "article"
+    ],
+    "queue": "quick",
+    "url": "https://www.reddit.com/r/databricks/comments/1u85qvd/databricks_data_and_ai_summit_day_1_recap/",
+    "source": "Reddit r/databricks",
+    "captured": "2026-06-18",
+    "effort": "0:15",
+    "type": "",
+    "done": false,
+    "id": "rl-databricks-data-ai-summit-day-1-recap-jun-2026"
+  },
+  {
+    "title": "Emacs 31: The Changes I'm Daily Driving",
+    "priority": "C",
+    "tags": [
+      "@home",
+      "article"
+    ],
+    "queue": "quick",
+    "url": "https://www.rahuljuliato.com/posts/emacs-31-around-the-corner",
+    "source": "rahuljuliato.com",
+    "captured": "2026-06-20",
+    "effort": "0:10",
+    "type": "",
+    "done": false,
+    "id": "rl-emacs-31-the-changes-i-m-daily-driving"
+  },
+  {
+    "title": "Databricks blog — Why Frontier Agents Can't Read Documents",
+    "priority": "A",
+    "tags": [
+      "@work",
+      "article"
+    ],
+    "queue": "quick",
+    "url": "https://www.databricks.com/blog/why-frontier-agents-cant-read-documents-and-how-were-fixing-it",
+    "source": "Databricks blog",
+    "captured": "2026-04-15",
+    "effort": "0:20",
+    "type": "",
+    "done": false,
+    "id": "rl-databricks-blog-why-frontier-agents-can-t-read-doc"
+  },
+  {
+    "title": "caveman — Claude Code skill (token reduction)",
+    "priority": "A",
+    "tags": [
+      "@work",
+      "tool"
+    ],
+    "queue": "quick",
+    "url": "https://github.com/JuliusBrussee/caveman",
+    "source": "ClaudeCode notes",
+    "captured": "2026-04-10",
+    "effort": "0:15",
+    "type": "",
+    "done": false,
+    "id": "rl-caveman-claude-code-skill-token-reduction"
+  },
+  {
+    "title": "Dive into Claude Code (VILA Lab)",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "reference"
+    ],
+    "queue": "quick",
+    "url": "https://github.com/VILA-Lab/Dive-into-Claude-Code",
+    "source": "ClaudeCode notes",
+    "captured": "2026-04-10",
+    "effort": "0:30",
+    "type": "",
+    "done": false,
+    "id": "rl-dive-into-claude-code-vila-lab"
+  },
+  {
+    "title": "Barry Zhang (Anthropic) — How We Build Effective Agents",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "video"
+    ],
+    "queue": "quick",
+    "url": "https://www.youtube.com/watch?v=D7_ipDqhtwk",
+    "source": "YouTube (AI Engineer Summit 2025, NY)",
+    "captured": "2026-04-12",
+    "effort": "0:15",
+    "type": "",
+    "done": false,
+    "id": "rl-barry-zhang-anthropic-how-we-build-effective-agent"
+  },
+  {
+    "title": "Alex Albert + Erik (Anthropic) — Building more effective AI agents",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "video"
+    ],
+    "queue": "quick",
+    "url": "https://www.youtube.com/watch?v=uhJJgc-0iTQ",
+    "source": "YouTube (Anthropic, published 2025-10-17)",
+    "captured": "2026-06-16",
+    "effort": "0:15",
+    "type": "",
+    "done": false,
+    "id": "rl-alex-albert-erik-anthropic-building-more-effective"
+  },
+  {
+    "title": "Barry Zhang + Mahesh Murag (Anthropic) — Don't Build Agents, Build Skills Instead",
+    "priority": "C",
+    "tags": [
+      "@work",
+      "video"
+    ],
+    "queue": "quick",
+    "url": "https://www.youtube.com/watch?v=CEvIs9y1uog",
+    "source": "YouTube (Anthropic)",
+    "captured": "2026-06-16",
+    "effort": "0:30",
+    "type": "",
+    "done": false,
+    "id": "rl-barry-zhang-mahesh-murag-anthropic-don-t-build-age"
+  },
+  {
+    "title": "Boris Cherny — Claude Code creator tweet thread",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "reference"
+    ],
+    "queue": "quick",
+    "url": "https://x.com/bcherny/status/2007179832300581177",
+    "source": "X",
+    "captured": "2026-04-12",
+    "effort": "0:15",
+    "type": "",
+    "done": false,
+    "id": "rl-boris-cherny-claude-code-creator-tweet-thread"
+  },
+  {
+    "title": "Boris Cherny — 15 min masterclass (via Linas)",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "video"
+    ],
+    "queue": "quick",
+    "url": "https://www.linkedin.com/posts/linasbeliunas_this-is-boris-cherny-the-creator-of-claude-ugcPost-7456676506979713025-OWB7",
+    "source": "LinkedIn",
+    "captured": "2026-04-12",
+    "effort": "0:15",
+    "type": "",
+    "done": false,
+    "id": "rl-boris-cherny-15-min-masterclass-via-linas"
+  },
+  {
+    "title": "Open Design — coding agent as design engine",
+    "priority": "C",
+    "tags": [
+      "@work",
+      "tool"
+    ],
+    "queue": "quick",
+    "url": "https://github.com/nexu-io/open-design",
+    "source": "GitHub trending",
+    "captured": "2026-04-13",
+    "effort": "0:20",
+    "type": "",
+    "done": false,
+    "id": "rl-open-design-coding-agent-as-design-engine"
+  },
+  {
+    "title": "Databricks AI Dev Kit",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "tool"
+    ],
+    "queue": "quick",
+    "url": "https://github.com/databricks-solutions/ai-dev-kit",
+    "source": "Databricks",
+    "captured": "2026-04-22",
+    "effort": "0:30",
+    "type": "",
+    "done": false,
+    "id": "rl-databricks-ai-dev-kit"
+  },
+  {
+    "title": "AI for Solo Founders — multi-agent automation (Arielle Ostankova)",
+    "priority": "C",
+    "tags": [
+      "article"
+    ],
+    "queue": "quick",
+    "url": "https://www.linkedin.com/posts/arielle-ostankova_ai-for-solo-founders-10x-yourself-ugcPost-7454635715608469505-2Dca",
+    "source": "LinkedIn",
+    "captured": "2026-04-08",
+    "effort": "0:15",
+    "type": "",
+    "done": false,
+    "id": "rl-ai-for-solo-founders-multi-agent-automation-ariell"
+  },
+  {
+    "title": "Modern Recommender Systems (Kim Falk, Manning) — LinkedIn intro",
+    "priority": "A",
+    "tags": [
+      "@work",
+      "article"
+    ],
+    "queue": "quick",
+    "url": "https://www.linkedin.com/posts/kimfalken_rag-recsys-llm-share-7454455167267160064-JU3G",
+    "source": "Kim Falk LinkedIn (warm network)",
+    "captured": "2026-04-08",
+    "effort": "0:20",
+    "type": "",
+    "done": false,
+    "id": "rl-modern-recommender-systems-kim-falk-manning-linked"
+  },
+  {
+    "title": "CocoIndex — incremental data pipeline engine",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "tool"
+    ],
+    "queue": "quick",
+    "url": "https://github.com/cocoindex-io/cocoindex",
+    "source": "GitHub",
+    "captured": "2026-04-15",
+    "effort": "0:25",
+    "type": "",
+    "done": false,
+    "id": "rl-cocoindex-incremental-data-pipeline-engine"
+  },
+  {
+    "title": "Meta FAIR — Autodata (agentic training data generation)",
+    "priority": "C",
+    "tags": [
+      "@work",
+      "research"
+    ],
+    "queue": "quick",
+    "url": "https://x.com/i/status/2051311905353142328",
+    "source": "X",
+    "captured": "2026-04-25",
+    "effort": "0:20",
+    "type": "",
+    "done": false,
+    "id": "rl-meta-fair-autodata-agentic-training-data-generatio"
+  },
+  {
+    "title": "Claude Code — Agent View (research preview)",
+    "priority": "A",
+    "tags": [
+      "@work",
+      "tool"
+    ],
+    "queue": "quick",
+    "url": "https://x.com/i/status/2053940934736228454",
+    "source": "X (@claudeai)",
+    "captured": "2026-05-12",
+    "effort": "0:05",
+    "type": "",
+    "done": false,
+    "id": "rl-claude-code-agent-view-research-preview"
+  },
+  {
+    "title": "Token Savior — symbol-based code navigation MCP",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "tool"
+    ],
+    "queue": "quick",
+    "url": "https://lnkd.in/ed63xR3F",
+    "source": "LinkedIn list",
+    "captured": "2026-05-18",
+    "effort": "0:20",
+    "type": "",
+    "done": false,
+    "id": "rl-token-savior-symbol-based-code-navigation-mcp"
+  },
+  {
+    "title": "Claude Context — Zilliz hybrid vector search MCP",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "tool"
+    ],
+    "queue": "quick",
+    "url": "https://lnkd.in/ewTqDbYh",
+    "source": "LinkedIn list",
+    "captured": "2026-05-18",
+    "effort": "0:20",
+    "type": "",
+    "done": false,
+    "id": "rl-claude-context-zilliz-hybrid-vector-search-mcp"
+  },
+  {
+    "title": "RTK (Rust Token Killer) — terminal output filtering",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "tool"
+    ],
+    "queue": "quick",
+    "url": "https://lnkd.in/eMYtBZYZ",
+    "source": "LinkedIn list",
+    "captured": "2026-05-18",
+    "effort": "0:20",
+    "type": "",
+    "done": false,
+    "id": "rl-rtk-rust-token-killer-terminal-output-filtering"
+  },
+  {
+    "title": "Context Mode — sandbox raw outputs to SQLite",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "tool"
+    ],
+    "queue": "quick",
+    "url": "https://lnkd.in/eYKNAtss",
+    "source": "LinkedIn list",
+    "captured": "2026-05-18",
+    "effort": "0:20",
+    "type": "",
+    "done": false,
+    "id": "rl-context-mode-sandbox-raw-outputs-to-sqlite"
+  },
+  {
+    "title": "lean-ctx — context layer for Claude Code (hands-on test)",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "tool"
+    ],
+    "queue": "quick",
+    "url": "https://github.com/yvgude/lean-ctx",
+    "source": "GitHub (yvgude)",
+    "captured": "2026-05-18",
+    "effort": "0:30",
+    "type": "",
+    "done": false,
+    "id": "rl-lean-ctx-context-layer-for-claude-code-hands-on-te"
+  },
+  {
+    "title": "book-to-skill — convert technical books into Claude skills (test)",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "tool"
+    ],
+    "queue": "quick",
+    "url": "https://github.com/virgiliojr94/book-to-skill",
+    "source": "GitHub (virgiliojr94)",
+    "captured": "2026-05-20",
+    "effort": "0:20",
+    "type": "",
+    "done": false,
+    "id": "rl-book-to-skill-convert-technical-books-into-claude-"
+  },
+  {
+    "title": "Anthropic AI-Native Startup Playbook",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "article"
+    ],
+    "queue": "quick",
+    "url": "https://lnkd.in/d-MVusTs",
+    "source": "LinkedIn (Linas Beliūnas / Bilal Ahmed)",
+    "captured": "2026-05-19",
+    "effort": "0:30",
+    "type": "",
+    "done": false,
+    "id": "rl-anthropic-ai-native-startup-playbook"
+  },
+  {
+    "title": "Building Pi — what makes self-modifying software fascinating",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "article"
+    ],
+    "queue": "quick",
+    "url": "https://newsletter.pragmaticengineer.com/p/building-pi-and-what-makes-self-modifying",
+    "source": "Pragmatic Engineer (Gergely Orosz)",
+    "captured": "2026-05-11",
+    "effort": "0:20",
+    "type": "",
+    "done": false,
+    "id": "rl-building-pi-what-makes-self-modifying-software-fas"
+  },
+  {
+    "title": "files.md — anti-complexity PKM philosophy",
+    "priority": "C",
+    "tags": [
+      "article"
+    ],
+    "queue": "quick",
+    "url": "https://github.com/zakirullin/files.md",
+    "source": "HackerNews / GitHub (zakirullin)",
+    "captured": "2026-05-19",
+    "effort": "0:15",
+    "type": "",
+    "done": false,
+    "id": "rl-files-md-anti-complexity-pkm-philosophy"
+  },
+  {
+    "title": "Open-Source AI and Open Models Reading List (interconnects.ai)",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "article",
+      "ml"
+    ],
+    "queue": "medium",
+    "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+    "source": "Miguel (WhatsApp)",
+    "captured": "2026-09-14",
+    "effort": "1:00",
+    "type": "",
+    "done": false,
+    "id": "rl-open-source-ai-and-open-models-reading-list-interc"
+  },
+  {
+    "title": "Graph Engineering workshop — Anthropic engineer (2h video)",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "video",
+      "agents"
+    ],
+    "queue": "medium",
+    "url": "https://x.com/i/status/2081017726261199185",
+    "source": "X (@0xCodez)",
+    "captured": "2026-07-26",
+    "effort": "2:00",
+    "type": "",
+    "done": false,
+    "id": "rl-graph-engineering-workshop-anthropic-engineer-2h-v"
+  },
+  {
+    "title": "Training Agents Class 1: SFT, run by an agent — @SergioPaniego",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "video",
+      "agents"
+    ],
+    "queue": "medium",
+    "url": "https://x.com/SergioPaniego/status/2069369115630870771",
+    "source": "X (@SergioPaniego)",
+    "captured": "2026-07-27",
+    "effort": "1:00",
+    "type": "",
+    "done": false,
+    "id": "rl-training-agents-class-1-sft-run-by-an-agent-sergio"
+  },
+  {
+    "title": "Distinguished Colloquium: Jeff Dean — Feb 10, 2026 (Google DeepMind / Research)",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "video"
+    ],
+    "queue": "medium",
+    "url": "https://youtu.be/UTTeXZrpMR0",
+    "source": "Miguel (WhatsApp)",
+    "captured": "2026-08-09",
+    "effort": "1:00",
+    "type": "",
+    "done": false,
+    "id": "rl-distinguished-colloquium-jeff-dean-feb-10-2026-goo"
+  },
+  {
+    "title": "Ines Montani — Vibe NLP for Applied NLP (PyData London 2026)",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "video"
+    ],
+    "queue": "medium",
+    "url": "https://youtu.be/dA3zSt6_6AA",
+    "source": "YouTube / PyData",
+    "captured": "2026-06-21",
+    "effort": "0:40",
+    "type": "",
+    "done": false,
+    "id": "rl-ines-montani-vibe-nlp-for-applied-nlp-pydata-londo"
+  },
+  {
+    "title": "Learn Harness Engineering — walkinglabs",
+    "priority": "A",
+    "tags": [
+      "@work",
+      "course"
+    ],
+    "queue": "medium",
+    "url": "https://walkinglabs.github.io/learn-harness-engineering/en/",
+    "source": "Web (walkinglabs)",
+    "captured": "2026-05-17",
+    "effort": "2:00",
+    "type": "",
+    "done": false,
+    "id": "rl-learn-harness-engineering-walkinglabs"
+  },
+  {
+    "title": "Yann LeCun — What Comes After LLMs (Unsupervised Learning podcast)",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "video"
+    ],
+    "queue": "medium",
+    "url": "https://youtu.be/ngBraLDqzdI",
+    "source": "YouTube (Unsupervised Learning / Jacob Effron)",
+    "captured": "2026-05-18",
+    "effort": "1:00",
+    "type": "",
+    "done": false,
+    "id": "rl-yann-lecun-what-comes-after-llms-unsupervised-lear"
+  },
+  {
+    "title": "Werkzeug, Fähigkeit oder Unteragent? — Agent decomposition",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "video"
+    ],
+    "queue": "medium",
+    "url": "https://youtu.be/mWvtOHlZM-I",
+    "source": "YouTube",
+    "captured": "2026-06-03",
+    "effort": "0:20",
+    "type": "",
+    "done": false,
+    "id": "rl-werkzeug-f-higkeit-oder-unteragent-agent-decomposi"
+  },
+  {
+    "title": "Han Xiao — In-house AI teams in the frontier model era",
+    "priority": "A",
+    "tags": [
+      "@work",
+      "ai",
+      "strategy"
+    ],
+    "queue": "medium",
+    "url": "https://www.linkedin.com/posts/hxiao87_two-weeks-ago-at-microsoft-build-in-sf-i-share-7472005255057129472-7_wc/",
+    "source": "LinkedIn (Han Xiao, Jina AI founder, post-Microsoft Build)",
+    "captured": "2026-06-14",
+    "effort": "0:30",
+    "type": "",
+    "done": false,
+    "id": "rl-han-xiao-in-house-ai-teams-in-the-frontier-model-e"
+  },
+  {
+    "title": "Satya Nadella — Thoughts on the Future of the Firm in an AI Age",
+    "priority": "A",
+    "tags": [
+      "@work",
+      "ai",
+      "strategy"
+    ],
+    "queue": "medium",
+    "url": "https://snscratchpad.com/posts/frontier-ecosystem/",
+    "source": "LinkedIn (Satya Nadella) → snscratchpad",
+    "captured": "2026-06-14",
+    "effort": "0:45",
+    "type": "",
+    "done": false,
+    "id": "rl-satya-nadella-thoughts-on-the-future-of-the-firm-i"
+  },
+  {
+    "title": "CS 329Z: Engineering AI Agents (Stanford)",
+    "priority": "B",
+    "tags": [
+      "course",
+      "queue",
+      "@work"
+    ],
+    "queue": "deep",
+    "url": "https://cs329z.stanford.edu/",
+    "source": "Miguel (WhatsApp)",
+    "captured": "2026-09-24",
+    "effort": "30:00",
+    "type": "course",
+    "done": false,
+    "id": "rl-cs-329z-engineering-ai-agents-stanford"
+  },
+  {
+    "title": "30papers.com — Ilya Sutskever's 30 essential ML papers",
+    "priority": "C",
+    "tags": [
+      "@work",
+      "ml",
+      "foundations",
+      "reference"
+    ],
+    "queue": "deep",
+    "url": "https://30papers.com/",
+    "source": "WhatsApp",
+    "captured": "2026-07-08",
+    "effort": "",
+    "type": "paper-collection (ongoing/reference — no single duration)",
+    "done": false,
+    "id": "rl-30papers-com-ilya-sutskever-s-30-essential-ml-pape"
+  },
+  {
+    "title": "europe2031.ai — Speculative scenario: Europe & AI by 2031",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "ai",
+      "europe",
+      "strategy"
+    ],
+    "queue": "deep",
+    "url": "https://europe2031.ai/",
+    "source": "ARQ Foundation (Judith Dada et al.) — PDF + podcast available",
+    "captured": "2026-06-14",
+    "effort": "3:00",
+    "type": "",
+    "done": false,
+    "id": "rl-europe2031-ai-speculative-scenario-europe-ai-by-20"
+  },
+  {
+    "title": "Machine Learning in Production (CMU Book)",
+    "priority": "A",
+    "tags": [
+      "book",
+      "queue",
+      "@work"
+    ],
+    "queue": "deep",
+    "url": "https://mlip-cmu.github.io/book/index.html",
+    "source": "",
+    "captured": "2026-01-15",
+    "effort": "20:00",
+    "type": "book",
+    "done": false,
+    "id": "rl-machine-learning-in-production-cmu-book"
+  },
+  {
+    "title": "Sebastian Raschka — Build a Large Language Model (From Scratch)",
+    "priority": "A",
+    "tags": [
+      "book",
+      "queue",
+      "after-karpathy"
+    ],
+    "queue": "deep",
+    "url": "",
+    "source": "",
+    "captured": "2026-04-01",
+    "effort": "30:00",
+    "type": "book",
+    "done": false,
+    "id": "rl-sebastian-raschka-build-a-large-language-model-fro"
+  },
+  {
+    "title": "CS336 — Language Modeling from Scratch (Stanford)",
+    "priority": "C",
+    "tags": [
+      "course",
+      "queue",
+      "@work"
+    ],
+    "queue": "deep",
+    "url": "https://cs336.stanford.edu/",
+    "source": "",
+    "captured": "2026-06-01",
+    "effort": "40:00",
+    "type": "course",
+    "done": false,
+    "id": "rl-cs336-language-modeling-from-scratch-stanford"
+  },
+  {
+    "title": "Anthropic — Agent Skills short course (DeepLearning.AI)",
+    "priority": "B",
+    "tags": [
+      "course",
+      "queue",
+      "short"
+    ],
+    "queue": "deep",
+    "url": "https://www.deeplearning.ai/short-courses/",
+    "source": "",
+    "captured": "2026-05-22",
+    "effort": "2:00",
+    "type": "short-course",
+    "done": false,
+    "id": "rl-anthropic-agent-skills-short-course-deeplearning-a"
   }
 ]
