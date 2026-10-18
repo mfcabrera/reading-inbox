@@ -1,0 +1,32 @@
+[
+  {
+    "id": "best-resources-transformers",
+    "title": "Best Resources to learn Transformers",
+    "url": "https://x.com/techNmak/status/2104954244277379158",
+    "source": "X (@techNmak)",
+    "captured": "2026-09-30",
+    "type": "article",
+    "effort": "1:00",
+    "done": false
+  },
+  {
+    "id": "language-models-text-classification",
+    "title": "Language Models for Text Classification: From Bag-of-Words to Jev",
+    "url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev",
+    "source": "Sebastian Raschka's magazine (Substack)",
+    "captured": "2026-10-04",
+    "type": "article",
+    "effort": "1:00",
+    "done": false
+  },
+  {
+    "id": "reverse-saas-vc",
+    "title": "VCs putting serious money behind a \"reverse SaaS\" model",
+    "url": "https://www.linkedin.com/posts/dilinigalanga_vcs-are-putting-serious-money-behind-a-model-share-7513661488562245632-7wXk/",
+    "source": "LinkedIn (Dilini Galanga)",
+    "captured": "2026-10-08",
+    "type": "article",
+    "effort": "0:15",
+    "done": false
+  }
+]
