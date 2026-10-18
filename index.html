@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading Inbox</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; background: #fafafa; color: #1a1a1a; }
+  h1 { font-size: 1.4rem; }
+  .item { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 14px 16px; margin-bottom: 10px; display: flex; gap: 12px; align-items: flex-start; }
+  .item.done { opacity: 0.45; }
+  .item input[type=checkbox] { margin-top: 4px; width: 18px; height: 18px; }
+  .item .title { font-weight: 600; }
+  .item .meta { font-size: 0.8rem; color: #666; margin-top: 2px; }
+  .item a { color: #2563eb; text-decoration: none; }
+  #gate { max-width: 320px; margin: 120px auto; text-align: center; }
+  #gate input { padding: 8px; font-size: 1rem; width: 100%; box-sizing: border-box; margin-top: 10px; }
+  #status { font-size: 0.85rem; color: #888; margin-top: 16px; }
+  button { cursor: pointer; }
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <h1>Reading Inbox</h1>
+  <p>Password:</p>
+  <input type="password" id="pw" autofocus>
+  <p id="pwError" style="color:#c00; display:none;">Wrong password.</p>
+</div>
+
+<div id="app" style="display:none;">
+  <h1>📚 Reading Inbox</h1>
+  <div id="list"></div>
+  <p id="status"></p>
+</div>
+
+<script>
+const REPO = "mfcabrera/reading-inbox";
+const FILE = "data.json";
+// SHA-256 of the password, so the plaintext isn't sitting in the page source.
+const PW_HASH = "0bbb2d7f3c195735897734a5fcb40f4fd40df77a6c039a485af0e0232a9956d7";
+
+async function sha256(text) {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
+}
+
+document.getElementById("pw").addEventListener("keydown", async (e) => {
+  if (e.key !== "Enter") return;
+  const val = e.target.value;
+  const hash = await sha256(val);
+  if (hash === PW_HASH) {
+    document.getElementById("gate").style.display = "none";
+    document.getElementById("app").style.display = "block";
+    init();
+  } else {
+    document.getElementById("pwError").style.display = "block";
+  }
+});
+
+function getToken() {
+  let t = localStorage.getItem("gh_pat");
+  if (!t) {
+    t = prompt("Paste your GitHub fine-grained Personal Access Token (contents:write on mfcabrera/reading-inbox only). Stored only in this browser.");
+    if (t) localStorage.setItem("gh_pat", t.trim());
+  }
+  return t;
+}
+
+let currentSha = null;
+
+async function loadData() {
+  const token = getToken();
+  const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`, {
+    headers: token ? { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json" } : { Accept: "application/vnd.github+json" }
+  });
+  const json = await res.json();
+  currentSha = json.sha;
+  const content = decodeURIComponent(escape(atob(json.content)));
+  return JSON.parse(content);
+}
+
+async function saveData(items) {
+  const token = getToken();
+  if (!token) { alert("No token saved — can't sync to GitHub."); return; }
+  const body = {
+    message: "Update reading-inbox via web checklist",
+    content: btoa(unescape(encodeURIComponent(JSON.stringify(items, null, 2)))),
+    sha: currentSha,
+    branch: "main"
+  };
+  const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`, {
+    method: "PUT",
+    headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json" },
+    body: JSON.stringify(body)
+  });
+  if (!res.ok) {
+    const err = await res.json();
+    alert("Sync failed: " + (err.message || res.status));
+    return;
+  }
+  const json = await res.json();
+  currentSha = json.content.sha;
+  document.getElementById("status").textContent = "Synced " + new Date().toLocaleTimeString();
+}
+
+function render(items) {
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+  items.forEach((item, idx) => {
+    const div = document.createElement("div");
+    div.className = "item" + (item.done ? " done" : "");
+    const meta = [item.source, item.effort, item.captured].filter(Boolean).join(" · ");
+    div.innerHTML = `
+      <input type="checkbox" ${item.done ? "checked" : ""} data-idx="${idx}">
+      <div>
+        <div class="title">${item.url ? `<a href="${item.url}" target="_blank">${item.title}</a>` : item.title}</div>
+        <div class="meta">${meta}</div>
+      </div>
+    `;
+    list.appendChild(div);
+  });
+  list.querySelectorAll("input[type=checkbox]").forEach(cb => {
+    cb.addEventListener("change", async (e) => {
+      const idx = parseInt(e.target.dataset.idx, 10);
+      items[idx].done = e.target.checked;
+      render(items);
+      document.getElementById("status").textContent = "Syncing…";
+      await saveData(items);
+    });
+  });
+}
+
+async function init() {
+  document.getElementById("status").textContent = "Loading…";
+  const items = await loadData();
+  render(items);
+  document.getElementById("status").textContent = "";
+}
+</script>
+</body>
+</html>
