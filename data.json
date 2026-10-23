@@ -1,18 +1,5 @@
 [
   {
-    "id": "best-resources-transformers",
-    "title": "Best Resources to learn Transformers",
-    "url": "https://x.com/techNmak/status/2104954244277379158",
-    "source": "X (@techNmak)",
-    "captured": "2026-09-30",
-    "type": "article",
-    "effort": "1:00",
-    "done": false,
-    "queue": "inbox",
-    "priority": null,
-    "tags": []
-  },
-  {
     "id": "language-models-text-classification",
     "title": "Language Models for Text Classification: From Bag-of-Words to Jev",
     "url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev",
@@ -21,9 +8,13 @@
     "type": "article",
     "effort": "1:00",
     "done": false,
-    "queue": "inbox",
-    "priority": null,
-    "tags": []
+    "queue": "medium",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "article",
+      "ml"
+    ]
   },
   {
     "id": "reverse-saas-vc",
@@ -34,9 +25,11 @@
     "type": "article",
     "effort": "0:15",
     "done": false,
-    "queue": "inbox",
-    "priority": null,
-    "tags": []
+    "queue": "quick",
+    "priority": "C",
+    "tags": [
+      "article"
+    ]
   },
   {
     "title": "Agentic Engineering at Zalando — A Snapshot",
@@ -839,5 +832,22 @@
     "type": "short-course",
     "done": false,
     "id": "rl-anthropic-agent-skills-short-course-deeplearning-a"
+  },
+  {
+    "id": "rl-choosing-and-tuning-decision-models-for-evals",
+    "title": "Choosing and tuning decision models for evals",
+    "url": "https://hamel.dev/blog/posts/decision-model-evals/",
+    "source": "WhatsApp link",
+    "captured": "2026-10-21",
+    "type": "article",
+    "effort": "0:15",
+    "done": false,
+    "queue": "quick",
+    "priority": "B",
+    "tags": [
+      "@work",
+      "article",
+      "ml"
+    ]
   }
 ]
